@@ -102,7 +102,7 @@ import {ref, onMounted, onBeforeUnmount} from "vue";
     
 
 
-    const SITE_KEY = '6LeQY38sAAAAABE38t-rNRtcU9p0RTnp5epk8SRL';
+    const SITE_KEY = '6LcrrH8sAAAAABSz1YjsGTVe42El_Jg92o3okDdg';
 
     const recaptchaContainer = ref(null);
     const recaptchaWidgetId = ref(null);
