@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
 
-            <form>
+            <form @submit.prevent="submitForm">
                 <div class="mb-3">
                     <label class="form-label fw-semibold">Your Name</label>
                     <input name="name" type="text" class="form-control" placeholder="Enter name">
@@ -23,6 +23,10 @@
                     <label class="form-label fw-semibold">Message</label>
                     <textarea name="message" class="form-control" rows="4" placeholder="Write message"></textarea>
                 </div>
+
+				<div class="mb-3 d-flex justify-content-center">
+    				<div ref="recaptchaContainer"></div>
+  				</div>
 
                 <button class="btn btn-dark w-100 py-2 rounded-pill">Send Message</button>
             </form>
