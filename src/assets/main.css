@@ -61,7 +61,7 @@ html {
 }
 
 #landing {
-  background-image: url("images/background.png"); 
+  background-image: url("/images/background.png"); 
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
@@ -238,7 +238,7 @@ html {
 }
 
 #tools {
-  background-image:url("images/background-tools.png"); 
+  background-image:url("/images/background-tools.png"); 
   background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
