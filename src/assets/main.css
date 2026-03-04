@@ -1,0 +1,295 @@
+/*@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#logo{
+  letter-spacing: 3px;
+  font-family: Pixelify Sans;
+  font-weight: 900;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 24px;
+  color: #696969;
+}
+
+#landing h1 {
+  font-family: Pixelify Sans;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+#landing {
+  background-image: url("images/background.png"); 
+  background-size: cover;     
+  background-position: center; 
+  background-repeat: no-repeat; 
+  
+}
+
+#landing h4 {
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+#landing img {
+  width: 300px;         
+    height: 300px;        
+    object-fit: cover;    
+    border-radius: 50%;   
+    border: 5px solid #fff; 
+}
+
+#base {
+  
+  color: white;
+  font-family: Pixelify Sans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-decoration: NONE;
+  box-shadow: 0 9px #999;
+  background: #f0ad4e;
+  
+}
+
+#base:hover {
+  background: #d9534f;
+}
+
+#base:active {
+  background: #d9534f;
+  transform: translateY(4px);
+}
+
+#icons img {
+  width: 80px;         
+    height: 80px;        
+    object-fit: cover;    
+    border-radius: 50%;   
+    border: 5px solid #fff; 
+}
+
+#icons img:hover{
+  -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+
+
+#projects h2{
+  font-family: Pixelify Sans;
+  font-weight: 900;
+  font-size: 70px;
+  color:  #696969;
+  
+}
+
+#projects img {
+  mix-blend-mode: multiply;
+  width: 100%;          
+    max-height: 200px;  
+    object-fit: contain;
+    object-position: center;  
+    padding: 10px;  
+
+}
+
+#projects h5 {
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.project-card {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: scale(0.95)
+}
+
+
+.project-scroll {
+    overflow-x: auto;       
+    overflow-y: hidden;      
+    padding-bottom: 15px;    
+    -webkit-overflow-scrolling: touch; 
+}
+
+
+.project-row {
+    display: flex;
+    gap: 20px;               
+}
+
+
+.project-card {
+    flex: 0 0 auto;          
+    min-width: 250px;       
+    max-width: 300px;       
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+@media (min-width: 992px) {
+    .project-scroll::-webkit-scrollbar {
+        height: 10px;             
+    }
+
+    .project-scroll::-webkit-scrollbar-thumb {
+        background: lightgray;      
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .project-scroll::-webkit-scrollbar-track {
+        background: #eee;       
+    }
+
+ 
+    .project-scroll {
+        scrollbar-width: thick;
+        scrollbar-color: dimgray;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .project-scroll {
+        overflow-x: auto;           
+    }
+
+    .project-scroll::-webkit-scrollbar {
+        display: none;              
+    }
+
+    .project-scroll {
+        scrollbar-width: none;      
+    }
+
+    .project-card {
+        min-width: 200px;           
+    }
+}
+
+
+.project-row {
+    display: flex;
+    gap: 20px;
+}
+
+.project-row a {
+    display: inline-block; 
+    line-height: 0; 
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-scroll {
+    white-space: nowrap;
+}
+
+#tools {
+  background-image:url("images/background-tools.png"); 
+  background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh;
+}
+
+#tools h2 {
+  font-family: Pixelify Sans;
+  font-weight: 900;
+  font-size: 70px;
+  color:  white;  
+}
+
+#tools h4 {
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+#contact h2{
+  font-family: Pixelify Sans;
+  font-weight: 900;
+  font-size: 70px;
+  color:  #696969;
+}
+
+#contact h4 {
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+#contact form {
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
